@@ -440,13 +440,13 @@ header .utill li:last-child a {
   margin-top: 20px;
 }
 
-.section01 .inner h2.title > div {
+.section01 .inner h2.title>div {
   opacity: 0;
   display: inline-block;
   font-size: 6.4rem;
 }
 
-.section01 .inner h2.title > div .ball-wrap {
+.section01 .inner h2.title>div .ball-wrap {
   flex-direction: row;
   gap: 12px;
   justify-content: flex-end;
@@ -482,12 +482,12 @@ header .utill li:last-child a {
   }
 }
 
-.section01 .inner h2.title > div p {
+.section01 .inner h2.title>div p {
   margin-bottom: 14px;
   font-size: 6.4rem;
 }
 
-.section01 .inner h2.title > p {
+.section01 .inner h2.title>p {
   font-weight: 500;
   opacity: 0;
 }
@@ -497,7 +497,7 @@ header .utill li:last-child a {
   gap: var(--gap);
 }
 
-.section01 .inner > div:first-child {
+.section01 .inner>div:first-child {
   flex-shrink: 0;
 }
 
@@ -505,6 +505,86 @@ header .utill li:last-child a {
   position: relative;
   max-width: 800px;
   width: 100%;
+}
+
+.section01 .inner .exam-wrap {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.section01 .inner .exam-wrap .hero-exam-area {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.section01 .inner .exam-wrap .hero-exam-tags {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.section01 .inner .exam-wrap .hero-exam-tags span {
+  padding: 2px 10px;
+  border-radius: 100px;
+  background-color: #12c9c2;
+  color: #ffffff;
+  line-height: 1;
+  font-family: "Paperlogy";
+}
+
+.section01 .inner .exam-wrap .hero-exam p {
+  margin: 0;
+  color: #12c9c2;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.section01 .inner .exam-wrap .hero-date-window {
+  position: absolute;
+  top: 58%;
+  left: 0;
+  z-index: 1;
+  width: calc(100% - min(550px, 90%) + min(153px, 25.02%));
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.section01 .inner .exam-wrap .hero-date-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section01 .inner .exam-wrap .hero-date-strip {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: rolling 18s linear infinite;
+}
+
+.section01 .inner .exam-wrap .hero-date-strip img {
+  display: block;
+  flex: 0 0 479px;
+  width: 479px;
+  height: auto;
+  opacity: 0.5;
+}
+
+.section01 .inner .exam-wrap .hero-notebook {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: block;
+  width: min(550px, 90%);
+  height: auto;
 }
 
 .section01 .inner .img-wrap .rel {
@@ -534,7 +614,7 @@ header .utill li:last-child a {
   height: 100%;
 }
 
-.section01 .inner .img-wrap .deco > * {
+.section01 .inner .img-wrap .deco>* {
   position: absolute;
 }
 
@@ -653,11 +733,11 @@ header .utill li:last-child a {
   animation-fill-mode: forwards;
 }
 
-.section01.act .inner h2.title > div {
+.section01.act .inner h2.title>div {
   animation-delay: 0.2s;
 }
 
-.section01.act .inner h2.title > p {
+.section01.act .inner h2.title>p {
   animation-delay: 0.4s;
 }
 
@@ -670,6 +750,16 @@ header .utill li:last-child a {
 
 .section01.act .inner .img-wrap .deco {
   animation-delay: 0.2s;
+}
+
+.section01.act .inner .exam-wrap {
+  animation: right-left 1s 0.2s 1 forwards;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .section01 .inner .exam-wrap .hero-date-strip {
+    animation: none;
+  }
 }
 
 /** section01 animation end **/
@@ -1134,7 +1224,7 @@ header .utill li:last-child a {
   transition-delay: 0.6s;
 }
 
-.section04 .tab-contents .tab-item > div:not(.flex) .text:first-child {
+.section04 .tab-contents .tab-item>div:not(.flex) .text:first-child {
   margin-bottom: var(--gap);
   padding-bottom: var(--gap);
   border-bottom: 1px solid #9aa2c3;
@@ -1178,15 +1268,15 @@ header .utill li:last-child a {
   background-repeat: no-repeat;
 }
 
-.section05 > div .title {
+.section05>div .title {
   margin-bottom: 14px;
 }
 
-.section05 > div :where(h3, .caption) {
+.section05>div :where(h3, .caption) {
   gap: 6px;
 }
 
-.section05 > div .title .caption span {
+.section05>div .title .caption span {
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: 400;
@@ -1195,18 +1285,18 @@ header .utill li:last-child a {
   border: 1px solid #ffffff;
 }
 
-.section05 > div .alert {
+.section05>div .alert {
   margin-bottom: 14px;
   font-size: 1.8rem;
   font-weight: 400;
 }
 
-.section05 > div .rolling-wrap {
+.section05>div .rolling-wrap {
   overflow: hidden;
   margin-bottom: calc(var(--section-gap) / 2);
 }
 
-.section05 > div .rolling-wrap .inner {
+.section05>div .rolling-wrap .inner {
   display: flex;
   gap: var(--gap);
   width: max-content;
@@ -1218,18 +1308,18 @@ header .utill li:last-child a {
   animation-fill-mode: forwards;
 }
 
-.section05 > div:nth-child(2) .rolling-wrap .inner {
+.section05>div:nth-child(2) .rolling-wrap .inner {
   animation-name: rolling-r;
 }
 
-.section05 > div .rolling-wrap .inner .item p {
+.section05>div .rolling-wrap .inner .item p {
   margin-top: 4px;
   padding: 0 10px;
   font-weight: 400;
   font-size: 1.4rem;
 }
 
-.section05 > .con p {
+.section05>.con p {
   width: max-content;
   max-width: 100%;
   margin: 0 auto;
@@ -1239,7 +1329,7 @@ header .utill li:last-child a {
   color: #1fe6bf;
 }
 
-.section05 > .con p::before {
+.section05>.con p::before {
   content: "";
   display: block;
   margin: 0 auto;
@@ -1249,7 +1339,7 @@ header .utill li:last-child a {
   background-color: #ffffff;
 }
 
-.section05 > .con p span {
+.section05>.con p span {
   display: block;
   text-align: right;
   font-size: 1.6rem;
@@ -1257,7 +1347,7 @@ header .utill li:last-child a {
   font-weight: 400;
 }
 
-.section05 > div:nth-child(2) .rolling-wrap {
+.section05>div:nth-child(2) .rolling-wrap {
   margin-bottom: 24px;
 }
 
@@ -1296,7 +1386,7 @@ header .utill li:last-child a {
   gap: var(--gap);
 }
 
-.section06 ul.flex > li {
+.section06 ul.flex>li {
   border-radius: var(--radius);
   border: 1px solid #ffffff;
   backdrop-filter: blur(10px);
@@ -1305,13 +1395,13 @@ header .utill li:last-child a {
   opacity: 0;
 }
 
-.section06 ul.flex > li img {
+.section06 ul.flex>li img {
   width: 100%;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
 
-.section06 ul.flex > li .text {
+.section06 ul.flex>li .text {
   width: 100%;
   padding: 24px;
   border-bottom-left-radius: var(--radius);
@@ -1323,7 +1413,7 @@ header .utill li:last-child a {
   font-weight: 400;
 }
 
-.section06 ul.flex > li .text .tag {
+.section06 ul.flex>li .text .tag {
   display: inline-block;
   margin-bottom: 6px;
   padding: 8px 14px;
@@ -1333,7 +1423,7 @@ header .utill li:last-child a {
   font-weight: 700;
 }
 
-.section06 ul.flex > li ul li {
+.section06 ul.flex>li ul li {
   margin-bottom: 6px;
   padding-left: 8px;
 
@@ -1353,7 +1443,7 @@ header .utill li:last-child a {
   }
 }
 
-.section06 ul.flex > li ul li::before {
+.section06 ul.flex>li ul li::before {
   content: "";
 }
 
@@ -1367,7 +1457,7 @@ header .utill li:last-child a {
   line-height: 1.4;
 }
 
-.section06.act ul.flex > li {
+.section06.act ul.flex>li {
   animation-name: scaleUp-bounce;
   animation-duration: 2s;
   animation-delay: 0.5s;
@@ -1753,7 +1843,7 @@ header .utill li:last-child a {
   padding-bottom: 50px;
 }
 
-.section11 .con > img {
+.section11 .con>img {
   height: 54px;
   margin: 0 auto;
   margin-bottom: var(--gap);
@@ -1807,7 +1897,7 @@ header .utill li:last-child a {
   width: calc((100% - 4px) / 2);
 }
 
-.section11 form > .save_application_wrap {
+.section11 form>.save_application_wrap {
   display: block;
   max-width: 180px;
   width: 100%;
@@ -1819,6 +1909,7 @@ header .utill li:last-child a {
   text-align: center;
   font-size: 2rem;
 }
+
 /* section11 end */
 
 /* section done */
@@ -1876,8 +1967,8 @@ header .utill li:last-child a {
   animation-iteration-count: infinite;
 }
 
-.section.done .complete .title{
-    text-align: center;
+.section.done .complete .title {
+  text-align: center;
 }
 
 @keyframes swing1 {
@@ -1897,7 +1988,7 @@ header .utill li:last-child a {
     transform: translate(-50%, -50%);
   }
 
-  90%{
+  90% {
     opacity: 0;
   }
 
@@ -1931,6 +2022,7 @@ header .utill li:last-child a {
   color: #ffffff;
   font-size: 1.8rem;
 }
+
 /* section done end */
 
 /* ctn btn */
@@ -1996,11 +2088,11 @@ footer .con .foo-info .text {
   width: 100%;
 }
 
-footer .con .foo-info .text > *:not(:last-child) {
+footer .con .foo-info .text>*:not(:last-child) {
   margin-bottom: 12px;
 }
 
-footer .con .foo-info .text > p:not(.copy) {
+footer .con .foo-info .text>p:not(.copy) {
   padding-left: 6px;
 
   &::before {
@@ -2048,7 +2140,7 @@ footer .con .foo-info .qr-wrap li a {
   width: 120px;
 }
 
-footer .con .foo-info .qr-wrap li a > img {
+footer .con .foo-info .qr-wrap li a>img {
   width: 80px;
   height: 80px;
 }
@@ -2127,6 +2219,7 @@ footer .con .foo-info .qr-wrap li a .flex {
 .dimmed .popup .text p {
   line-height: 1.8;
 }
+
 /* popup end */
 
 /* done popup */
@@ -2149,6 +2242,7 @@ footer .con .foo-info .qr-wrap li a .flex {
   color: var(--color-main);
   font-size: 2rem;
 }
+
 /* done popup end */
 
 /* animation */
@@ -2385,6 +2479,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
 /* animation end */
 
 @media screen and (max-width: 1440px) {
@@ -2427,7 +2522,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     height: 16px;
   }
 
-  .section01 .inner h2.title > div p {
+  .section01 .inner h2.title>div p {
     font-size: 5.2rem;
   }
 
@@ -2439,6 +2534,11 @@ footer .con .foo-info .qr-wrap li a .flex {
   .section01 .inner .img-wrap {
     max-width: 600px;
     width: 100%;
+  }
+
+  .section01 .inner .exam-wrap {
+    max-width: 600px;
+    height: 300px;
   }
 
   .section01 .inner .img-wrap .deco span {
@@ -2579,30 +2679,30 @@ footer .con .foo-info .qr-wrap li a .flex {
     font-size: 1.6rem;
   }
 
-  .section05 > div .title .caption span {
+  .section05>div .title .caption span {
     padding: 4px 8px;
     font-size: 1.4rem;
   }
 
-  .section05 > div .alert {
+  .section05>div .alert {
     font-size: 1.6rem;
   }
 
-  .section05 > div .rolling-wrap .inner .item img {
+  .section05>div .rolling-wrap .inner .item img {
     width: 140px;
   }
 
-  .section06 ul.flex > li .text {
+  .section06 ul.flex>li .text {
     padding: 18px;
     padding-top: 10px;
   }
 
-  .section06 ul.flex > li .text .tag {
+  .section06 ul.flex>li .text .tag {
     font-size: 1.6rem;
     padding: 6px 10px;
   }
 
-  .section06 ul.flex > li ul li {
+  .section06 ul.flex>li ul li {
     font-size: 1.6rem;
   }
 
@@ -2636,7 +2736,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     }
   }
 
-  .section09 .con > .flex {
+  .section09 .con>.flex {
     justify-content: space-around;
   }
 
@@ -2672,7 +2772,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     display: none;
   }
 
-  .section10 .con > .flex {
+  .section10 .con>.flex {
     justify-content: center;
   }
 
@@ -2753,18 +2853,44 @@ footer .con .foo-info .qr-wrap li a .flex {
     text-align: center;
   }
 
-  .section01 .inner h2.title > div {
+  .section01 .inner h2.title>div {
     width: 100%;
     text-align: center;
   }
 
-  .section01 .inner h2.title > p {
+  .section01 .inner h2.title>p {
     text-align: center;
   }
 
   .section01 .inner .img-wrap .rel img {
     width: 200px;
     height: 200px;
+  }
+
+  .section01 .inner .exam-wrap {
+    height: 200px;
+  }
+
+  .section01 .inner .exam-wrap .hero-date-window {
+    width: calc(100% - min(330px, 82%) + min(92px, 22.8%));
+  }
+
+  .section01 .inner .exam-wrap .hero-date-strip img {
+    flex: 0 0 330px;
+    width: 330px;
+  }
+
+  .section01 .inner .exam-wrap .hero-notebook {
+    width: min(330px, 82%);
+  }
+
+  .section01 .inner .exam-wrap .hero-exam p {
+    font-size: clamp(2.4rem, 7vw, 3.6rem);
+  }
+
+  .section01 .inner .exam-wrap .hero-exam-tags span {
+    padding: 2px 8px;
+    font-size: 1.3rem;
   }
 
   .section01 .inner .img-wrap .deco span {
@@ -2863,21 +2989,21 @@ footer .con .foo-info .qr-wrap li a .flex {
     justify-content: center;
   }
 
-  .section04 .tab-contents .tab-item > div:not(.flex) .text p,
-  .section04 .tab-contents .tab-item > div:not(.flex) .text dt {
+  .section04 .tab-contents .tab-item>div:not(.flex) .text p,
+  .section04 .tab-contents .tab-item>div:not(.flex) .text dt {
     padding: 0;
     text-align: left;
   }
 
-  .section04 .tab-contents .tab-item:nth-child(3) > div dl dd ul {
+  .section04 .tab-contents .tab-item:nth-child(3)>div dl dd ul {
     justify-content: flex-start;
   }
 
-  .section05 > .con p span {
+  .section05>.con p span {
     font-size: 1.4rem;
   }
 
-  .section05 > div .alert {
+  .section05>div .alert {
     line-height: 1.4;
   }
 
@@ -2889,18 +3015,18 @@ footer .con .foo-info .qr-wrap li a .flex {
     flex-direction: column;
   }
 
-  .section06 ul.flex > li {
+  .section06 ul.flex>li {
     display: flex;
     width: 100%;
   }
 
-  .section06 ul.flex > li .thumb {
+  .section06 ul.flex>li .thumb {
     width: 140px;
     height: 140px;
     flex-shrink: 0;
   }
 
-  .section06 ul.flex > li img {
+  .section06 ul.flex>li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2909,13 +3035,13 @@ footer .con .foo-info .qr-wrap li a .flex {
     border-bottom-left-radius: var(--radius);
   }
 
-  .section06 ul.flex > li .text {
+  .section06 ul.flex>li .text {
     border-radius: 0;
     border-top-right-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
   }
 
-  .section06 ul.flex > li .text .tag {
+  .section06 ul.flex>li .text .tag {
     margin-bottom: 12px;
     padding: 0;
     background-color: inherit;
@@ -2924,7 +3050,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     color: #00a484;
   }
 
-  .section06 ul.flex > li ul li {
+  .section06 ul.flex>li ul li {
     margin-bottom: 12px;
 
     &:last-child {
@@ -3007,7 +3133,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     min-height: 260px;
   }
 
-  .section09 .con > .flex > div:first-child {
+  .section09 .con>.flex>div:first-child {
     width: 100%;
   }
 
@@ -3025,11 +3151,11 @@ footer .con .foo-info .qr-wrap li a .flex {
     margin-bottom: 18px;
   }
 
-  .wrap:has(.section.done){
+  .wrap:has(.section.done) {
     height: auto;
   }
 
-  .section.done{
+  .section.done {
     justify-content: start;
     height: 100dvh;
     padding: 120px 0;
@@ -3071,7 +3197,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     width: 100px;
   }
 
-  footer .con .qr-wrap li a > img {
+  footer .con .qr-wrap li a>img {
     margin: 0 auto;
   }
 
@@ -3116,6 +3242,37 @@ footer .con .foo-info .qr-wrap li a .flex {
     max-height: 240px;
     height: 100%;
     border-top-left-radius: 200px;
+  }
+
+  .section01 .inner .exam-wrap {
+    max-width: 336px;
+    height: 230px;
+    margin: 0 auto;
+  }
+
+  .section01 .inner .exam-wrap .hero-exam p {
+    font-size: clamp(2.6rem, 7.5vw, 3.2rem);
+  }
+
+  .section01 .inner .exam-wrap .hero-date-window {
+    top: 68%;
+    width: calc(100% - min(280px, 86%) + min(78px, 24%));
+  }
+
+  .section01 .inner .exam-wrap .hero-date-strip {
+    width: max-content;
+    gap: 0;
+  }
+
+  .section01 .inner .exam-wrap .hero-date-strip img {
+    flex: 0 0 280px;
+    width: 280px;
+  }
+
+  .section01 .inner .exam-wrap .hero-notebook {
+    right: 0;
+    bottom: 0;
+    width: min(280px, 86%);
   }
 
   .section02 .title p {
@@ -3225,39 +3382,39 @@ footer .con .foo-info .qr-wrap li a .flex {
     }
   }
 
-  .section05 > div .title {
+  .section05>div .title {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
 
-  .section05 > div .title .caption span {
+  .section05>div .title .caption span {
     font-size: 1.3rem;
   }
 
-  .section05 > .con p::before {
+  .section05>.con p::before {
     height: 84px;
   }
 
-  .section06 ul.flex > li {
+  .section06 ul.flex>li {
     border: 1px solid #ffffff;
   }
 
-  .section06 ul.flex > li .thumb {
+  .section06 ul.flex>li .thumb {
     width: 100%;
   }
 
-  .section06 ul.flex > li {
+  .section06 ul.flex>li {
     flex-direction: column;
   }
 
-  .section06 ul.flex > li img {
+  .section06 ul.flex>li img {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
     border-bottom-left-radius: 0;
   }
 
-  .section06 ul.flex > li .text {
+  .section06 ul.flex>li .text {
     border-top-right-radius: 0;
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
@@ -3331,7 +3488,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     height: 100%;
   }
 
-  .section11 .con > img {
+  .section11 .con>img {
     height: 36px;
   }
 
@@ -3339,7 +3496,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     font-size: 1.6rem;
   }
 
-  .section11 form > .save_application_wrap {
+  .section11 form>.save_application_wrap {
     width: 100%;
     font-size: 1.8rem;
   }
@@ -3364,7 +3521,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     line-height: 1.2;
   }
 
-  .section01 .inner h2.title > div .ball-wrap {
+  .section01 .inner h2.title>div .ball-wrap {
     display: none;
   }
 
@@ -3372,11 +3529,11 @@ footer .con .foo-info .qr-wrap li a .flex {
     margin-top: 0;
   }
 
-  .section01 .inner h2.title > div p {
+  .section01 .inner h2.title>div p {
     font-size: 3.6rem;
   }
 
-  .section01 .inner h2.title > p {
+  .section01 .inner h2.title>p {
     font-size: 1.6rem;
     text-align: center;
   }
@@ -3430,5 +3587,17 @@ footer .con .foo-info .qr-wrap li a .flex {
 
   .dimmed .popup {
     max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  .section01 .inner .exam-wrap .hero-exam-tags span {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .section01 .inner .exam-wrap .hero-exam p {
+    font-family: "Paperlogy";
+    font-size: clamp(4rem, 4vw, 5rem);
   }
 }
