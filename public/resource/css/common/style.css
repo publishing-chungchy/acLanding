@@ -507,6 +507,178 @@ header .utill li:last-child a {
   width: 100%;
 }
 
+.section01 .inner .exam-wrap {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.section01 .inner .exam-wrap .hero-exam-tags {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.section01 .inner .exam-wrap .hero-exam-tags span {
+  padding: 2px 10px;
+  border-radius: 100px;
+  background-color: #12c9c2;
+  color: #ffffff;
+  line-height: 1;
+  font-family: "Paperlogy";
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.section01 .inner .exam-wrap .hero-exam p {
+  margin: 0;
+  color: #12c9c2;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.section01 .inner .exam-wrap .hero-date-window {
+  position: absolute;
+  top: 58%;
+  left: 0;
+  z-index: 1;
+  width: calc(100% - min(550px, 90%) + min(153px, 25.02%));
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.section01 .inner .exam-wrap .hero-date-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section01 .inner .exam-wrap .hero-date-strip {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: rolling 18s linear infinite;
+}
+
+.section01 .inner .exam-wrap .hero-date-strip img {
+  display: block;
+  flex: 0 0 479px;
+  width: 479px;
+  height: auto;
+  opacity: 1;
+}
+
+.section01 .inner .exam-wrap .hero-notebook {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: block;
+  width: min(550px, 90%);
+  height: auto;
+}
+
+.section01 .inner .exam-wrap .hero-exam p {
+  font-family: "Paperlogy";
+  font-size: clamp(4rem, 4vw, 5rem);
+}
+
+.section01 .inner .exam-wrap.open {
+  max-width: 760px;
+  overflow: visible;
+}
+
+.section01 .inner .exam-wrap.open .hero-exam p {
+  font-size: 6.4rem;
+  opacity: 0.4;
+}
+
+.section01 .inner .exam-wrap.open .img-wrap {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 500px;
+  aspect-ratio: 1/1;
+}
+
+.section01 .inner .exam-wrap.open .img-wrap img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 노트북 화면 gif : 400px 기준 좌표로 matrix3d 적용, 크기는 scale(img-wrap 너비 / 400)로 맞춤 */
+.section01 .inner .exam-wrap.open .img-wrap .screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  transform-origin: 0 0;
+  transform: scale(1.25);
+  pointer-events: none;
+}
+
+.section01 .inner .exam-wrap.open .img-wrap .screen img {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: 400px;
+  height: 200px;
+  transform-origin: 0 0;
+  transform: matrix3d(0.560525, -0.052111, 0, -0.000535, -0.040091, 0.844496, 0, -0.000002, 0, 0, 1, 0, 47, 46, 0, 1);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation-name: floating-s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  box-shadow: 4px 4px 10px #9baead;
+}
+
+.section01 .inner .exam-wrap.open .text-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 30px;
+}
+
+.section01 .inner .exam-wrap.open .text-wrap dl {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #12c9c2;
+    box-shadow: 0px 0px 0px 4px rgba(18, 201, 194, 0.2);
+  }
+}
+
+.section01 .inner .exam-wrap.open .text-wrap dt {
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section01 .inner .exam-wrap.open .text-wrap dd {
+  color: rgba(0, 26, 103, 0.4);
+  font-size: 1.6rem;
+}
+
 .section01 .inner .img-wrap .rel {
   opacity: 0;
   position: relative;
@@ -670,6 +842,16 @@ header .utill li:last-child a {
 
 .section01.act .inner .img-wrap .deco {
   animation-delay: 0.2s;
+}
+
+.section01.act .inner .exam-wrap {
+  animation: right-left 1s 0.2s 1 forwards;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .section01 .inner .exam-wrap .hero-date-strip {
+    animation: none;
+  }
 }
 
 /** section01 animation end **/
@@ -1074,7 +1256,7 @@ header .utill li:last-child a {
   }
 }
 
-.section04 .tab-contents .tab-item video {
+.section04 .tab-contents .tab-item :where(video, img) {
   border-radius: var(--radius);
   max-width: 860px;
   width: 60%;
@@ -1147,10 +1329,7 @@ header .utill li:last-child a {
   opacity: 1;
 }
 
-.section04.act .tab-contents .tab-item video,
-.section04.act .tab-contents .tab-item .text p,
-.section04.act .tab-contents .tab-item .text dl dt,
-.section04.act .tab-contents .tab-item .text dl dd ul li {
+.section04.act .tab-contents .tab-item :is(video, img, .text p, .text dl dt, .text dl dd ul li) {
   opacity: 1;
   transform: translateX(0);
 }
@@ -1876,8 +2055,8 @@ header .utill li:last-child a {
   animation-iteration-count: infinite;
 }
 
-.section.done .complete .title{
-    text-align: center;
+.section.done .complete .title {
+  text-align: center;
 }
 
 @keyframes swing1 {
@@ -1897,7 +2076,7 @@ header .utill li:last-child a {
     transform: translate(-50%, -50%);
   }
 
-  90%{
+  90% {
     opacity: 0;
   }
 
@@ -2204,6 +2383,20 @@ footer .con .foo-info .qr-wrap li a .flex {
   }
 }
 
+@keyframes floating-s {
+  0% {
+    top: 10px;
+  }
+
+  50% {
+    top: 0px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}
+
 @keyframes swim {
   0% {
     transform: scale(1);
@@ -2439,6 +2632,44 @@ footer .con .foo-info .qr-wrap li a .flex {
   .section01 .inner .img-wrap {
     max-width: 600px;
     width: 100%;
+  }
+
+  .section01 .inner .exam-wrap {
+    max-width: 720px;
+  }
+
+  .section01 .inner .exam-wrap.open {
+    height: 350px;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam p {
+    font-size: 4.8rem;
+  }
+
+  .section01 .inner .exam-wrap.open .img-wrap {
+    width: 350px;
+  }
+
+  .section01 .inner .exam-wrap.open .img-wrap .screen {
+    transform: scale(0.875);
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl {
+    margin-bottom: 12px;
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dt {
+    margin-bottom: 6px;
+    font-size: 2rem;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dd {
+    font-size: 1.6rem;
+    line-height: 1.3;
   }
 
   .section01 .inner .img-wrap .deco span {
@@ -2724,6 +2955,41 @@ footer .con .foo-info .qr-wrap li a .flex {
   }
 }
 
+@media screen and (max-width: 1080px) {
+
+  .section01 .inner .exam-wrap.open .text-wrap {
+    left: auto;
+    right: 250px;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl {
+    margin-bottom: 4px;
+    &:nth-child(2) {
+      transform: translateX(15px);
+    }
+    &:nth-child(3) {
+      transform: translateX(30px);
+    }
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl::before {
+    display: none;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dt {
+    font-size: 1.8rem;
+    padding: 12px;
+    border-radius: 16px;
+    background-color: rgb(21, 208, 199, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dd {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 850px) {
   :root {
     --radius: 16px;
@@ -2736,7 +3002,7 @@ footer .con .foo-info .qr-wrap li a .flex {
 
   .section01 .inner {
     flex-direction: column;
-    gap: calc(var(--gap) * 3);
+    gap: calc(var(--gap) * 5);
   }
 
   .section01 .inner .bubble {
@@ -2765,6 +3031,88 @@ footer .con .foo-info .qr-wrap li a .flex {
   .section01 .inner .img-wrap .rel img {
     width: 200px;
     height: 200px;
+  }
+
+  .section01 .inner .exam-wrap {
+    height: 200px;
+  }
+
+  .section01 .inner .exam-wrap .hero-date-window {
+    width: calc(100% - min(330px, 82%) + min(92px, 22.8%));
+  }
+
+  .section01 .inner .exam-wrap .hero-date-strip img {
+    flex: 0 0 330px;
+    width: 330px;
+  }
+
+  .section01 .inner .exam-wrap .hero-notebook {
+    width: min(330px, 82%);
+  }
+
+  .section01 .inner .exam-wrap:not(.open) .hero-exam p {
+    font-family: "Pretendard";
+    font-size: clamp(2.4rem, 7vw, 3.6rem);
+  }
+
+  .section01 .inner .exam-wrap .hero-exam-tags span {
+    padding: 2px 8px;
+    font-size: 1.3rem;
+    font-weight: inherit;
+  }
+
+  .section01 .inner .exam-wrap.open {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    padding-top: 0;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam-area {
+    position: relative;
+    width: 100%;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam-area .hero-exam {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap {
+    left: 0;
+    right: auto;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl:is(dl:nth-child(2), dl:nth-child(3)) {
+    transform: translate(0);
+    margin-bottom: 12px;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl::before {
+    display: block;
+    left: -18px;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dt {
+    padding: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    transform: translate(0);
+    backdrop-filter: none;
+    border: none;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dd {
+    display: block;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam-tags {
+    justify-content: center;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam p {
+    text-align: center;
   }
 
   .section01 .inner .img-wrap .deco span {
@@ -3025,11 +3373,11 @@ footer .con .foo-info .qr-wrap li a .flex {
     margin-bottom: 18px;
   }
 
-  .wrap:has(.section.done){
+  .wrap:has(.section.done) {
     height: auto;
   }
 
-  .section.done{
+  .section.done {
     justify-content: start;
     height: 100dvh;
     padding: 120px 0;
@@ -3116,6 +3464,93 @@ footer .con .foo-info .qr-wrap li a .flex {
     max-height: 240px;
     height: 100%;
     border-top-left-radius: 200px;
+  }
+
+  .section01 .inner .exam-wrap {
+    max-width: 336px;
+    height: 230px;
+    margin: 0 auto;
+  }
+
+  .section01 .inner .exam-wrap:not(.open) .hero-exam p {
+    font-size: clamp(2.6rem, 7.5vw, 3.2rem);
+  }
+
+  .section01 .inner .exam-wrap .hero-date-window {
+    top: 68%;
+    width: calc(100% - min(280px, 86%) + min(78px, 24%));
+  }
+
+  .section01 .inner .exam-wrap .hero-date-strip {
+    width: max-content;
+    gap: 0;
+  }
+
+  .section01 .inner .exam-wrap .hero-date-strip img {
+    flex: 0 0 280px;
+    width: 280px;
+  }
+
+  .section01 .inner .exam-wrap .hero-notebook {
+    right: 0;
+    bottom: 0;
+    width: min(280px, 86%);
+  }
+
+  .section01 .inner .exam-wrap.open {
+    max-width: inherit;
+    height: auto;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam-area,
+  .section01 .inner .exam-wrap.open .img-wrap,
+  .section01 .inner .exam-wrap.open .text-wrap {
+    position: relative;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam-area .hero-exam > * {
+    margin: 0 auto;
+  }
+
+  .section01 .inner .exam-wrap.open .hero-exam p {
+    font-size: 2.4rem;
+  }
+
+  .section01 .inner .exam-wrap.open .img-wrap {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .section01 .inner .exam-wrap.open .img-wrap .screen {
+    transform: scale(0.875);
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap {
+    bottom: 80px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dl::before {
+    display: none;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dt {
+    font-size: 1.8rem;
+  }
+
+  .section01 .inner .exam-wrap.open .text-wrap dd {
+    font-size: 1.4rem;
   }
 
   .section02 .title p {
@@ -3348,6 +3783,14 @@ footer .con .foo-info .qr-wrap li a .flex {
 @media screen and (max-width: 390px) {
   header {
     width: calc(100dvw - 30px);
+  }
+
+  .section01 .inner .exam-wrap.open .img-wrap {
+    width: 290px;
+  }
+
+  .section01 .inner .exam-wrap.open .img-wrap .screen {
+    transform: scale(0.725);
   }
 
   .section01 .inner .bubble img {
