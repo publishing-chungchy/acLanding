@@ -4,7 +4,7 @@
   font-display: swap;
   src:
     local("Pretendard Black"),
-    url(../../../resource/font/Pretendard-Black.woff2) format("woff2"),
+    url(/public/resource/font/Pretendard-Black.woff2) format("woff2");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-display: swap;
   src:
     local("Pretendard ExtraBold"),
-    url(../../../resource/font/Pretendard-ExtraBold.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-ExtraBold.woff2) format("woff2");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-display: swap;
   src:
     local("Pretendard Bold"),
-    url(../../../resource/font/Pretendard-Bold.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-Bold.woff2) format("woff2");
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   font-display: swap;
   src:
     local("Pretendard SemiBold"),
-    url(../../../resource/font/Pretendard-SemiBold.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
@@ -40,7 +40,7 @@
   font-display: swap;
   src:
     local("Pretendard Medium"),
-    url(../../../resource/font/Pretendard-Medium.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-Medium.woff2) format("woff2");
 }
 
 @font-face {
@@ -49,7 +49,7 @@
   font-display: swap;
   src:
     local("Pretendard Regular"),
-    url(../../../resource/font/Pretendard-Regular.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-Regular.woff2) format("woff2");
 }
 
 @font-face {
@@ -58,7 +58,7 @@
   font-display: swap;
   src:
     local("Pretendard Light"),
-    url(../../../resource/font/Pretendard-Light.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-Light.woff2) format("woff2");
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-display: swap;
   src:
     local("Pretendard ExtraLight"),
-    url(../../../resource/font/Pretendard-ExtraLight.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-ExtraLight.woff2) format("woff2");
 }
 
 @font-face {
@@ -76,7 +76,7 @@
   font-display: swap;
   src:
     local("Pretendard Thin"),
-    url(../../../resource/font/Pretendard-Thin.woff2) format("woff2");
+    url(/public/resource/font/Pretendard-Thin.woff2) format("woff2");
 }
 
 @font-face {
@@ -85,7 +85,7 @@
   font-display: swap;
   src:
     local("Paperlogy ExtraLight"),
-    url(../../../resource/font/Paperlogy-ExtraLight.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-ExtraLight.woff2) format("woff2");
 }
 
 @font-face {
@@ -94,7 +94,7 @@
   font-display: swap;
   src:
     local("Paperlogy Light"),
-    url(../../../resource/font/Paperlogy-Light.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-Light.woff2) format("woff2");
 }
 
 @font-face {
@@ -103,7 +103,7 @@
   font-display: swap;
   src:
     local("Paperlogy Regular"),
-    url(../../../resource/font/Paperlogy-Regular.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-Regular.woff2) format("woff2");
 }
 
 @font-face {
@@ -112,7 +112,7 @@
   font-display: swap;
   src:
     local("Paperlogy Medium"),
-    url(../../../resource/font/Paperlogy-Medium.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-Medium.woff2) format("woff2");
 }
 
 @font-face {
@@ -121,7 +121,7 @@
   font-display: swap;
   src:
     local("Paperlogy SemiBold"),
-    url(../../../resource/font/Paperlogy-SemiBold.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
@@ -130,7 +130,7 @@
   font-display: swap;
   src:
     local("Paperlogy Bold"),
-    url(../../../resource/font/Paperlogy-Bold.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-Bold.woff2) format("woff2");
 }
 
 @font-face {
@@ -139,7 +139,7 @@
   font-display: swap;
   src:
     local("Paperlogy ExtraBold"),
-    url(../../../resource/font/Paperlogy-ExtraBold.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-ExtraBold.woff2) format("woff2");
 }
 
 @font-face {
@@ -148,7 +148,7 @@
   font-display: swap;
   src:
     local("Paperlogy Black"),
-    url(../../../resource/font/Paperlogy-Black.woff2) format("woff2");
+    url(/public/resource/font/Paperlogy-Black.woff2) format("woff2");
 }
 
 section:not(.section08) {
@@ -429,7 +429,7 @@ header .utill li:last-child a {
   display: block;
   width: 28px;
   height: 20px;
-  background-image: url(../../../resource/images/landing/section01-bubbleTail.svg);
+  background-image: url(/public/resource/images/landing/section01-bubbleTail.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -440,13 +440,13 @@ header .utill li:last-child a {
   margin-top: 20px;
 }
 
-.section01 .inner h2.title > div {
+.section01 .inner h2.title>div {
   opacity: 0;
   display: inline-block;
   font-size: 6.4rem;
 }
 
-.section01 .inner h2.title > div .ball-wrap {
+.section01 .inner h2.title>div .ball-wrap {
   flex-direction: row;
   gap: 12px;
   justify-content: flex-end;
@@ -482,12 +482,12 @@ header .utill li:last-child a {
   }
 }
 
-.section01 .inner h2.title > div p {
+.section01 .inner h2.title>div p {
   margin-bottom: 14px;
   font-size: 6.4rem;
 }
 
-.section01 .inner h2.title > p {
+.section01 .inner h2.title>p {
   font-weight: 500;
   opacity: 0;
 }
@@ -497,7 +497,7 @@ header .utill li:last-child a {
   gap: var(--gap);
 }
 
-.section01 .inner > div:first-child {
+.section01 .inner>div:first-child {
   flex-shrink: 0;
 }
 
@@ -707,7 +707,7 @@ header .utill li:last-child a {
   height: 100%;
 }
 
-.section01 .inner .img-wrap .deco > * {
+.section01 .inner .img-wrap .deco>* {
   position: absolute;
 }
 
@@ -826,11 +826,11 @@ header .utill li:last-child a {
   animation-fill-mode: forwards;
 }
 
-.section01.act .inner h2.title > div {
+.section01.act .inner h2.title>div {
   animation-delay: 0.2s;
 }
 
-.section01.act .inner h2.title > p {
+.section01.act .inner h2.title>p {
   animation-delay: 0.4s;
 }
 
@@ -1317,7 +1317,7 @@ header .utill li:last-child a {
   transition-delay: 0.6s;
 }
 
-.section04 .tab-contents .tab-item > div:not(.flex) .text:not(:last-child) {
+.section04 .tab-contents .tab-item>div:not(.flex) .text:not(:last-child) {
   margin-bottom: var(--gap);
   padding-bottom: var(--gap);
   border-bottom: 1px solid #9aa2c3;
@@ -1352,21 +1352,21 @@ header .utill li:last-child a {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../../../resource/images/landing/section05-bg.png);
+  background-image: url(/public/resource/images/landing/section05-bg.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.section05 > div .title {
+.section05>div .title {
   margin-bottom: 14px;
 }
 
-.section05 > div :where(h3, .caption) {
+.section05>div :where(h3, .caption) {
   gap: 6px;
 }
 
-.section05 > div .title .caption span {
+.section05>div .title .caption span {
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: 400;
@@ -1375,18 +1375,18 @@ header .utill li:last-child a {
   border: 1px solid #ffffff;
 }
 
-.section05 > div .alert {
+.section05>div .alert {
   margin-bottom: 14px;
   font-size: 1.8rem;
   font-weight: 400;
 }
 
-.section05 > div .rolling-wrap {
+.section05>div .rolling-wrap {
   overflow: hidden;
   margin-bottom: calc(var(--section-gap) / 2);
 }
 
-.section05 > div .rolling-wrap .inner {
+.section05>div .rolling-wrap .inner {
   display: flex;
   gap: var(--gap);
   width: max-content;
@@ -1398,18 +1398,18 @@ header .utill li:last-child a {
   animation-fill-mode: forwards;
 }
 
-.section05 > div:nth-child(2) .rolling-wrap .inner {
+.section05>div:nth-child(2) .rolling-wrap .inner {
   animation-name: rolling-r;
 }
 
-.section05 > div .rolling-wrap .inner .item p {
+.section05>div .rolling-wrap .inner .item p {
   margin-top: 4px;
   padding: 0 10px;
   font-weight: 400;
   font-size: 1.4rem;
 }
 
-.section05 > .con p {
+.section05>.con p {
   width: max-content;
   max-width: 100%;
   margin: 0 auto;
@@ -1419,7 +1419,7 @@ header .utill li:last-child a {
   color: #1fe6bf;
 }
 
-.section05 > .con p::before {
+.section05>.con p::before {
   content: "";
   display: block;
   margin: 0 auto;
@@ -1429,7 +1429,7 @@ header .utill li:last-child a {
   background-color: #ffffff;
 }
 
-.section05 > .con p span {
+.section05>.con p span {
   display: block;
   text-align: right;
   font-size: 1.6rem;
@@ -1437,7 +1437,7 @@ header .utill li:last-child a {
   font-weight: 400;
 }
 
-.section05 > div:nth-child(2) .rolling-wrap {
+.section05>div:nth-child(2) .rolling-wrap {
   margin-bottom: 24px;
 }
 
@@ -1476,7 +1476,7 @@ header .utill li:last-child a {
   gap: var(--gap);
 }
 
-.section06 ul.flex > li {
+.section06 ul.flex>li {
   border-radius: var(--radius);
   border: 1px solid #ffffff;
   backdrop-filter: blur(10px);
@@ -1485,13 +1485,13 @@ header .utill li:last-child a {
   opacity: 0;
 }
 
-.section06 ul.flex > li img {
+.section06 ul.flex>li img {
   width: 100%;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
 
-.section06 ul.flex > li .text {
+.section06 ul.flex>li .text {
   width: 100%;
   padding: 24px;
   border-bottom-left-radius: var(--radius);
@@ -1503,7 +1503,7 @@ header .utill li:last-child a {
   font-weight: 400;
 }
 
-.section06 ul.flex > li .text .tag {
+.section06 ul.flex>li .text .tag {
   display: inline-block;
   margin-bottom: 6px;
   padding: 8px 14px;
@@ -1513,7 +1513,7 @@ header .utill li:last-child a {
   font-weight: 700;
 }
 
-.section06 ul.flex > li ul li {
+.section06 ul.flex>li ul li {
   margin-bottom: 6px;
   padding-left: 8px;
 
@@ -1533,7 +1533,7 @@ header .utill li:last-child a {
   }
 }
 
-.section06 ul.flex > li ul li::before {
+.section06 ul.flex>li ul li::before {
   content: "";
 }
 
@@ -1547,7 +1547,7 @@ header .utill li:last-child a {
   line-height: 1.4;
 }
 
-.section06.act ul.flex > li {
+.section06.act ul.flex>li {
   animation-name: scaleUp-bounce;
   animation-duration: 2s;
   animation-delay: 0.5s;
@@ -1933,7 +1933,7 @@ header .utill li:last-child a {
   padding-bottom: 50px;
 }
 
-.section11 .con > img {
+.section11 .con>img {
   height: 54px;
   margin: 0 auto;
   margin-bottom: var(--gap);
@@ -1987,7 +1987,7 @@ header .utill li:last-child a {
   width: calc((100% - 4px) / 2);
 }
 
-.section11 form > .save_application_wrap {
+.section11 form>.save_application_wrap {
   display: block;
   max-width: 180px;
   width: 100%;
@@ -1999,6 +1999,7 @@ header .utill li:last-child a {
   text-align: center;
   font-size: 2rem;
 }
+
 /* section11 end */
 
 /* section done */
@@ -2111,6 +2112,7 @@ header .utill li:last-child a {
   color: #ffffff;
   font-size: 1.8rem;
 }
+
 /* section done end */
 
 /* ctn btn */
@@ -2176,11 +2178,11 @@ footer .con .foo-info .text {
   width: 100%;
 }
 
-footer .con .foo-info .text > *:not(:last-child) {
+footer .con .foo-info .text>*:not(:last-child) {
   margin-bottom: 12px;
 }
 
-footer .con .foo-info .text > p:not(.copy) {
+footer .con .foo-info .text>p:not(.copy) {
   padding-left: 6px;
 
   &::before {
@@ -2228,7 +2230,7 @@ footer .con .foo-info .qr-wrap li a {
   width: 120px;
 }
 
-footer .con .foo-info .qr-wrap li a > img {
+footer .con .foo-info .qr-wrap li a>img {
   width: 80px;
   height: 80px;
 }
@@ -2307,6 +2309,7 @@ footer .con .foo-info .qr-wrap li a .flex {
 .dimmed .popup .text p {
   line-height: 1.8;
 }
+
 /* popup end */
 
 /* done popup */
@@ -2329,6 +2332,7 @@ footer .con .foo-info .qr-wrap li a .flex {
   color: var(--color-main);
   font-size: 2rem;
 }
+
 /* done popup end */
 
 /* animation */
@@ -2579,6 +2583,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
 /* animation end */
 
 @media screen and (max-width: 1440px) {
@@ -2621,7 +2626,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     height: 16px;
   }
 
-  .section01 .inner h2.title > div p {
+  .section01 .inner h2.title>div p {
     font-size: 5.2rem;
   }
 
@@ -2811,30 +2816,30 @@ footer .con .foo-info .qr-wrap li a .flex {
     font-size: 1.6rem;
   }
 
-  .section05 > div .title .caption span {
+  .section05>div .title .caption span {
     padding: 4px 8px;
     font-size: 1.4rem;
   }
 
-  .section05 > div .alert {
+  .section05>div .alert {
     font-size: 1.6rem;
   }
 
-  .section05 > div .rolling-wrap .inner .item img {
+  .section05>div .rolling-wrap .inner .item img {
     width: 140px;
   }
 
-  .section06 ul.flex > li .text {
+  .section06 ul.flex>li .text {
     padding: 18px;
     padding-top: 10px;
   }
 
-  .section06 ul.flex > li .text .tag {
+  .section06 ul.flex>li .text .tag {
     font-size: 1.6rem;
     padding: 6px 10px;
   }
 
-  .section06 ul.flex > li ul li {
+  .section06 ul.flex>li ul li {
     font-size: 1.6rem;
   }
 
@@ -2868,7 +2873,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     }
   }
 
-  .section09 .con > .flex {
+  .section09 .con>.flex {
     justify-content: space-around;
   }
 
@@ -2904,7 +2909,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     display: none;
   }
 
-  .section10 .con > .flex {
+  .section10 .con>.flex {
     justify-content: center;
   }
 
@@ -2957,7 +2962,6 @@ footer .con .foo-info .qr-wrap li a .flex {
 }
 
 @media screen and (max-width: 1080px) {
-
   .section01 .inner .exam-wrap.open .text-wrap {
     left: auto;
     right: 250px;
@@ -2965,9 +2969,11 @@ footer .con .foo-info .qr-wrap li a .flex {
 
   .section01 .inner .exam-wrap.open .text-wrap dl {
     margin-bottom: 4px;
+
     &:nth-child(2) {
       transform: translateX(15px);
     }
+
     &:nth-child(3) {
       transform: translateX(30px);
     }
@@ -3020,12 +3026,12 @@ footer .con .foo-info .qr-wrap li a .flex {
     text-align: center;
   }
 
-  .section01 .inner h2.title > div {
+  .section01 .inner h2.title>div {
     width: 100%;
     text-align: center;
   }
 
-  .section01 .inner h2.title > p {
+  .section01 .inner h2.title>p {
     text-align: center;
   }
 
@@ -3212,21 +3218,21 @@ footer .con .foo-info .qr-wrap li a .flex {
     justify-content: center;
   }
 
-  .section04 .tab-contents .tab-item > div:not(.flex) .text p,
-  .section04 .tab-contents .tab-item > div:not(.flex) .text dt {
+  .section04 .tab-contents .tab-item>div:not(.flex) .text p,
+  .section04 .tab-contents .tab-item>div:not(.flex) .text dt {
     padding: 0;
     text-align: left;
   }
 
-  .section04 .tab-contents .tab-item:nth-child(3) > div dl dd ul {
+  .section04 .tab-contents .tab-item:nth-child(3)>div dl dd ul {
     justify-content: flex-start;
   }
 
-  .section05 > .con p span {
+  .section05>.con p span {
     font-size: 1.4rem;
   }
 
-  .section05 > div .alert {
+  .section05>div .alert {
     line-height: 1.4;
   }
 
@@ -3238,18 +3244,18 @@ footer .con .foo-info .qr-wrap li a .flex {
     flex-direction: column;
   }
 
-  .section06 ul.flex > li {
+  .section06 ul.flex>li {
     display: flex;
     width: 100%;
   }
 
-  .section06 ul.flex > li .thumb {
+  .section06 ul.flex>li .thumb {
     width: 140px;
     height: 140px;
     flex-shrink: 0;
   }
 
-  .section06 ul.flex > li img {
+  .section06 ul.flex>li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -3258,13 +3264,13 @@ footer .con .foo-info .qr-wrap li a .flex {
     border-bottom-left-radius: var(--radius);
   }
 
-  .section06 ul.flex > li .text {
+  .section06 ul.flex>li .text {
     border-radius: 0;
     border-top-right-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
   }
 
-  .section06 ul.flex > li .text .tag {
+  .section06 ul.flex>li .text .tag {
     margin-bottom: 12px;
     padding: 0;
     background-color: inherit;
@@ -3273,7 +3279,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     color: #00a484;
   }
 
-  .section06 ul.flex > li ul li {
+  .section06 ul.flex>li ul li {
     margin-bottom: 12px;
 
     &:last-child {
@@ -3356,7 +3362,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     min-height: 260px;
   }
 
-  .section09 .con > .flex > div:first-child {
+  .section09 .con>.flex>div:first-child {
     width: 100%;
   }
 
@@ -3420,7 +3426,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     width: 100px;
   }
 
-  footer .con .qr-wrap li a > img {
+  footer .con .qr-wrap li a>img {
     margin: 0 auto;
   }
 
@@ -3509,7 +3515,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     position: relative;
   }
 
-  .section01 .inner .exam-wrap.open .hero-exam-area .hero-exam > * {
+  .section01 .inner .exam-wrap.open .hero-exam-area .hero-exam>* {
     margin: 0 auto;
   }
 
@@ -3661,39 +3667,39 @@ footer .con .foo-info .qr-wrap li a .flex {
     }
   }
 
-  .section05 > div .title {
+  .section05>div .title {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
 
-  .section05 > div .title .caption span {
+  .section05>div .title .caption span {
     font-size: 1.3rem;
   }
 
-  .section05 > .con p::before {
+  .section05>.con p::before {
     height: 84px;
   }
 
-  .section06 ul.flex > li {
+  .section06 ul.flex>li {
     border: 1px solid #ffffff;
   }
 
-  .section06 ul.flex > li .thumb {
+  .section06 ul.flex>li .thumb {
     width: 100%;
   }
 
-  .section06 ul.flex > li {
+  .section06 ul.flex>li {
     flex-direction: column;
   }
 
-  .section06 ul.flex > li img {
+  .section06 ul.flex>li img {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
     border-bottom-left-radius: 0;
   }
 
-  .section06 ul.flex > li .text {
+  .section06 ul.flex>li .text {
     border-top-right-radius: 0;
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
@@ -3767,7 +3773,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     height: 100%;
   }
 
-  .section11 .con > img {
+  .section11 .con>img {
     height: 36px;
   }
 
@@ -3775,7 +3781,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     font-size: 1.6rem;
   }
 
-  .section11 form > .save_application_wrap {
+  .section11 form>.save_application_wrap {
     width: 100%;
     font-size: 1.8rem;
   }
@@ -3808,7 +3814,7 @@ footer .con .foo-info .qr-wrap li a .flex {
     line-height: 1.2;
   }
 
-  .section01 .inner h2.title > div .ball-wrap {
+  .section01 .inner h2.title>div .ball-wrap {
     display: none;
   }
 
@@ -3816,11 +3822,11 @@ footer .con .foo-info .qr-wrap li a .flex {
     margin-top: 0;
   }
 
-  .section01 .inner h2.title > div p {
+  .section01 .inner h2.title>div p {
     font-size: 3.6rem;
   }
 
-  .section01 .inner h2.title > p {
+  .section01 .inner h2.title>p {
     font-size: 1.6rem;
     text-align: center;
   }
